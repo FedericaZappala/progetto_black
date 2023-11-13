@@ -1,0 +1,243 @@
+:root {
+    --accent: #2B9DF4;
+}
+:root {
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Jura', sans-serif;
+}
+.check {
+    border: 1px solid red !important;
+}
+.bgCustom {
+    background-color: black;
+}
+.iconCustom {
+    font-size: 30px;
+    color: white;
+}
+.navbar-toggler-icon {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: white !important;
+    border: 1px solid white;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: white;
+}
+body {
+    background-color: black;
+}
+.ul-custom {
+    list-style-type: none;
+    display: inline;
+    color: white;
+}
+.line {
+    height: 2px;
+    width: 100%;
+    background-color:white;
+    
+}
+header{
+    background: radial-gradient(circle, rgba(0,0,0,0.5970763305322129) 0%, rgba(0,0,0,1) 55%), url('moon.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 65px;
+    letter-spacing: 7px;
+}
+.motto {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px; 
+}
+.iconHeader {
+    font-size: 50px;
+    color: var(--accent);
+}
+h3 {
+    color: var(--accent);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px; 
+    margin-bottom: 25px;
+}
+h4 {
+    color: var(--accent);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px; 
+    margin-bottom: 25px;
+}
+h5 {
+    color: var(--accent);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px; 
+    margin-bottom: 25px;
+}
+.borderBottom {
+    border-bottom: 1px solid var(--accent);
+}
+p {
+    font-family: 'Jura', sans-serif;
+}
+.bgMoon2 {
+    background-size:cover;
+    width:100%;
+    height:70vh;
+    display: flex;
+}
+.blueCustom {
+    font-size:25px;
+    color: var(--accent);
+}
+.blueLine {
+    height: 3px;
+    width: 100%;
+    color:var(--accent);
+}
+.missile {
+    width: 45%;
+    height: 100vh;
+}
+.button {
+    position: relative;
+    padding: 10px 24px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: var(--accent);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-shadow: 0 0 15px var(--accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  .button:hover {
+    color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0px var(--accent);
+  }
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent);
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .button:hover::before {
+    transform: scale(1);
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--color),
+      0 0 30px var(--color),
+      0 0 60px var(--color);
+  }
+  
+  .button span {
+    position: absolute;
+    background: var(--accent);
+    pointer-events: none;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--accent),
+      0 0 20px var(--accent),
+      0 0 30px var(--accent),
+      0 0 50px var(--accent),
+      0 0 100px var(--accent);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+  }
+  
+  .button:hover span {
+    opacity: 0;
+    transition-delay: 0s;
+  }
+  
+  .button span:nth-child(1),
+  .button span:nth-child(3) {
+    width: 40px;
+    height: 4px;
+  }
+  
+  .button:hover span:nth-child(1),
+  .button:hover span:nth-child(3) {
+    transform: translateX(0);
+  }
+  
+  .button span:nth-child(2),
+  .button span:nth-child(4) {
+    width: 4px;
+    height: 40px;
+  }
+  
+  .button:hover span:nth-child(1),
+  .button:hover span:nth-child(3) {
+    transform: translateY(0);
+  }
+  
+  .button span:nth-child(1) {
+    top: calc(50% - 2px);
+    left: -50px;
+    transform-origin: left;
+  }
+  
+  .button:hover span:nth-child(1) {
+    left: 50%;
+  }
+  
+  .button span:nth-child(3) {
+    top: calc(50% - 2px);
+    right: -50px;
+    transform-origin: right;
+  }
+  
+  .button:hover span:nth-child(3) {
+    right: 50%;
+  }
+  
+  .button span:nth-child(2) {
+    left: calc(50% - 2px);
+    top: -50px;
+    transform-origin: top;
+  }
+  
+  .button:hover span:nth-child(2) {
+    top: 50%;
+  }
+  
+  .button span:nth-child(4) {
+    left: calc(50% - 2px);
+    bottom: -50px;
+    transform-origin: bottom;
+  }
+  
+  .button:hover span:nth-child(4 ) {
+    bottom: 50%;
+  }
+  .bgFooter {
+    background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 85%), url('sunrise-1765027_1920.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+  }
+  .lineBottom {
+    width:100%;
+    height:10vh;
+
+  }
+.hrBottom {
+  border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, #0000, #2B9DF4, rgba(0, 0, 0, 0));
+	box-shadow: 0px 0px 10px 0px #2B9DF4;
+   width: 200px;    
+}
